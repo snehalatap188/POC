@@ -1,0 +1,38 @@
+<div [ngSwitch]="role">
+  <div *ngSwitchCase="'radio'">
+    <div [class]="classes" role="group" aria-label="Basic example">
+      <ng-container *ngFor="let item of buttonGroupItem;let i=index">
+        <input type="radio" class="btn-check" [name]="item.name" [id]="item.id" autocomplete="off"
+          (click)="onButtonClick(i)" [value]="item.value" [(ngModel)]="selectedRadio">
+        <label [for]="item.id" [class]="itemClass(item)">
+          <rds-icon [name]="item.icon" *ngIf="item.icon" [width]="item.iconWidth" [height]="item.iconHeight"
+            [fill]="item.iconFill" [stroke]="item.iconStroke"></rds-icon> {{item.label}}
+        </label>
+      </ng-container>
+    </div>
+  </div>
+  <div *ngSwitchCase="'checkbox'">
+    <div [class]="classes" role="group" aria-label="Basic example">
+      <ng-container *ngFor="let item of buttonGroupItem;let i=index">
+        <input type="checkbox" class="btn-check" [id]="item.id" autocomplete="off" [name]="item.label"
+          (click)="onButtonClick(i)" [value]="item.checked" [(ngModel)]="item.checked">
+        <label [for]="item.id" [class]="itemClass(item)">
+          <rds-icon [name]="item.icon" *ngIf="item.icon" [width]="item.iconWidth" [height]="item.iconHeight"
+            [fill]="item.iconFill" [stroke]="item.iconStroke"></rds-icon>
+          {{item.label}}
+        </label>
+      </ng-container>
+    </div>
+  </div>
+  <div *ngSwitchDefault>
+    <div [class]="classes" role="group" aria-label="Basic example">
+      <ng-container *ngFor=" let item of buttonGroupItem;let i=index">
+        <button type="button" [id]="item.label" [class]="itemClass(item)" (click)="onButtonClick(i)">
+          <rds-icon [name]="item.icon" [width]="item.iconWidth" [height]="item.iconHeight" [fill]="item.iconFill"
+            *ngIf="item.icon" [stroke]="item.iconStroke"></rds-icon> {{item.label}}
+        </button>
+      </ng-container>
+      <ng-content></ng-content>
+    </div>
+  </div>
+</div>

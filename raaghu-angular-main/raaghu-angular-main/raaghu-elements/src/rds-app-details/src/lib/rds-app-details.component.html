@@ -1,0 +1,56 @@
+<!-- <div class="card">
+  <div class="card-body">
+
+    <rds-icon height="25" [fill]="false" [stroke]="false" width="25" type="" [name]="ItemsList.icon" colorVariant="">
+    </rds-icon>
+    <rds-checkbox [checked]="false" [disabled]="false" [switch]="true" [id]="ItemsList.icon" [withLabel]="true"
+      [state]="'checkbox'" class="float-end"></rds-checkbox>
+    <div>
+      <label class="fs-4 fw-bold mt-2">
+        {{ItemsList.title}}
+      </label>
+    </div>
+    <div>
+      <label class="text-muted mt-1">
+        {{ItemsList.subtitle}}
+      </label>
+    </div>
+  </div>
+  <div class="card-footer bg-white">
+    <a [href]="ItemsList.route">
+      <label class="float-end pointerCur">
+        View integration
+      </label>
+    </a>
+  </div>
+</div> -->
+<div class="card">
+  <div class="p-3 " >
+    <span class="border p-2 rounded">
+      <rds-icon [height]="item.iconHeight" [width]="item.iconWidth" [fill]="item.iconFill"
+          [stroke]="item.iconStroke" [name]="item.icon">
+      </rds-icon>
+    </span>
+      <rds-checkbox [checked]="item.selected" [disabled]="false" [switch]="true" [id]="item.icon"
+          [withLabel]="true" [state]="'checkbox'" class="float-end"></rds-checkbox>
+  </div>
+  <div class="card-body p-2">
+      <div>
+          <label class="fs-5 fw-bold ">
+              {{item.title}}
+          </label>
+      </div>
+      <div>
+          <label class="text-muted mt-1">
+              {{item.subtitle}}
+          </label>
+      </div>
+  </div>
+  <div class="border-top">
+      <a [href]="item.route">
+          <label class="float-end p-2">
+              View integration
+          </label>
+      </a>
+  </div>
+</div>

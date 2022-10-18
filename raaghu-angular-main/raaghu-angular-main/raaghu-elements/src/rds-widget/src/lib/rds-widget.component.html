@@ -1,0 +1,12 @@
+<div div class="card shadow-sm card-stretch  gutter-b " [ngClass]="classes">
+  <div class="card-header d-flex justify-content-between">
+    <h5 class="card-title">{{ headerTitle }}</h5>
+    <div class="card-toolbar">
+      <rds-icon name="refresh" width="18x" height="18px" [fill]="false" [stroke]="true" *ngIf="isRefreshRequired" (click)="onRefresh.emit($event)"
+         style="cursor: pointer;"></rds-icon>
+    </div>
+  </div>
+  <div class="card-body pt-0"> 
+    <ng-content></ng-content>
+  </div>
+</div>

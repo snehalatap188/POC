@@ -1,0 +1,123 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "paths": {
+      "@libs/rds-elements": [
+        "projects/libs/rds-elements/src/root/public-api.ts"
+      ],
+      "@libs/shared": [
+        "projects/libs/shared/src/public-api.ts"
+      ],
+      "@libs/ngx-cookieconsent": [
+        "projects/libs/ngx-cookieconsent/src/public-api.ts"
+      ],
+      "@libs/state-management": [
+        "projects/libs/state-management/src/public-api.ts"
+      ],
+      "@libs/rds-icon": [
+        "rds-elements/rds-icon/public-api",
+        "rds-elements/rds-icon"
+      ],
+      "@libs/rds-badge": [
+        "rds-elements/rds-badge/public-api",
+        "rds-elements/rds-badge"
+      ],
+      "@libs/rds-icon-label": [
+        "rds-elements/rds-icon-label/public-api",
+        "rds-elements/rds-icon-label"
+      ],
+      "@libs/rds-select-list": [
+        "rds-elements/rds-select-list/public-api",
+        "rds-elements/rds-select-list"
+      ],
+      "@libs/rds-label": [
+        "rds-elements/rds-label/public-api",
+        "rds-elements/rds-label"
+      ],
+      "@libs/rds-avatar": [
+        "rds-elements/rds-avatar/public-api",
+        "rds-elements/rds-avatar"
+      ],
+      "@libs/rds-like-dislike": [
+        "rds-elements/rds-like-dislike/public-api",
+        "rds-elements/rds-like-dislike"
+      ],
+      "@libs/rds-rating": [
+        "rds-elements/rds-rating/public-api",
+        "rds-elements/rds-rating"
+      ],
+      "@libs/rds-checkbox": [
+        "rds-elements/rds-checkbox/public-api",
+        "rds-elements/rds-checkbox"
+      ],
+      "@libs/rds-radio-button": [
+        "rds-elements/rds-radio-button/public-api",
+        "rds-elements/rds-radio-button"
+      ],
+      "@libs/rds-button": [
+        "rds-elements/rds-button/public-api",
+        "rds-elements/rds-button"
+      ],
+      "@libs/rds-product-image": [
+        "rds-elements/rds-product-image/public-api",
+        "rds-elements/rds-product-image"
+      ],
+      "@libs/rds-big-number-widget": [
+        "rds-elements/rds-big-number-widget/public-api",
+        "rds-elements/rds-big-number-widget"
+      ],
+      "@libs/rds-stepper": [
+        "rds-elements/rds-stepper/public-api",
+        "rds-elements/rds-stepper"
+      ],
+      "@libs/rds-app-details": [
+        "rds-elements/rds-app-details/public-api",
+        "rds-elements/rds-app-details"
+      ],
+      "@libs/rds-counter": [
+        "rds-elements/rds-counter/public-api",
+        "rds-elements/rds-counter"
+      ],
+      "@libs/rds-team-member": [
+        "rds-elements/rds-team-member/public-api",
+        "rds-elements/rds-team-member"
+      ],
+      "@libs/rds-nav-tab": [
+        "rds-elements/rds-nav-tab/public-api",
+        "rds-elements/rds-nav-tab"
+      ],
+      "@libs/rds-chart-line": [
+        "rds-elements/rds-chart-line/public-api",
+        "rds-elements/rds-chart-line"
+      ],
+      "@libs/rds-chart-bar-horizontal": [
+        "rds-elements/rds-chart-bar-horizontal/public-api",
+        "rds-elements/rds-chart-bar-horizontal"
+      ]
+    },
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "types": [
+      "jasmine",
+      "node"
+    ],
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "target": "es2020",
+    "module": "es2020",
+    "lib": [
+      "es2018",
+      "dom"
+    ]
+  },
+  "angularCompilerOptions": {
+    "enableI18nLegacyMessageIdFormat": true,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strictTemplates": true
+  }
+}

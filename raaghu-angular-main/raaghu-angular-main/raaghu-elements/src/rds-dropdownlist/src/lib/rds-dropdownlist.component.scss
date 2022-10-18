@@ -1,0 +1,9 @@
+.dropdown-toggle {
+  display: flex;
+  align-items: self-end;
+}
+
+.dropdown-toggle::after {
+ /* border-top: 0;*/
+  display:none;
+}

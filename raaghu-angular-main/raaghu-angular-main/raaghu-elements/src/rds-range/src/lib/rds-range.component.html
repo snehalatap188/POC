@@ -1,0 +1,9 @@
+
+<div class="position-relative py-5">
+  <ng-container>
+    <span id="range1" class="sliderTooltipRangeOne " [attr.data-tooltip]="value"></span>
+  </ng-container>
+  <div class="slider-track"></div>
+  <input id=slider1 class="slider_1 " [ngStyle]="{'z-index': rangeZIndex1}" type="range" [min]="min" [max]="max" [value]="value" (input)="rangeone()"
+    [disabled]="valueDisabled1">
+</div>
